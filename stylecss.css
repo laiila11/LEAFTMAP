@@ -1,0 +1,75 @@
+#mapid { height: 180px; }
+@font-face
+{ 
+font-family:'Ubuntu-Title';
+src: url("font/ubuntu_[fr.allfont.net].ttf");
+
+}
+*{
+  font-family: 'Ubuntu-Title';
+}
+
+body
+{
+margin: 0;
+padding:0;
+background-image:url("image/plagejpg.jpg");
+background-position:center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+
+}
+
+#container
+{  
+          padding-bottom:  250px;
+           padding-top: 250px;
+           /* background-image:url("image/plagejpg.jpg"); */
+           background-size: cover;
+           display:flex;
+           flex-direction: row;
+         
+}
+#container .items2
+{
+  
+
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 3em;
+        
+}
+#container1 .items
+{
+ display:flex;
+ flex-direction: row;
+ justify-content: space-around;
+ }
+
+.me 
+{  
+width: 20vw;
+height: 20vw;
+display: flex;
+align-self: center;
+}
+#container1 .items img
+{border-radius: 50%;
+object-fit: cover;
+overflow: hidden;
+}
+#container1 .items2 p
+{
+line-height:3em ;
+font-size: 1.5em;
+margin:1% ;
+}
+body nav img
+{
+width: 100%;
+
+}

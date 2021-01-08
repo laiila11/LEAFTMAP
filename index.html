@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+                    <meta charset="UTF-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+             <title>tuto leaft</title>
+                            <link rel="stylesheet" href="stylecss.css" />
+                        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+                        <link
+                        rel="stylesheet"
+                        href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+                        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+                        crossorigin=""
+                        />
+                        <link
+                        rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css"
+                        integrity="sha512-Fdq8QvrEd3TD4heN8gNTOl79sAZR7zsiHIDQbE5eEBxx8pPfb/yJHaBWxhoG7SNcQiBmrrUHlg5TiNX4ovt6Jg=="
+                        crossorigin="anonymous"
+                        />
+
+                        <script
+                        src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+                        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+                        crossorigin=""
+                        ></script>
+  </head>
+  <body>
+
+               <nav><img src="image\narbonneheader.png" alt="" /></nav>
+
+    <div id="container1">
+        <div class="items">
+        <div class="me"><img src="image\mesnap.jpg"></img></div>
+
+          
+                <div class="items2">
+                        <p>Bonjour!</p>
+                        <p>Je m'appelle Laila et je voudrais vous faire découvrir certains lieus de ma belle ville Narbonne.
+                            Je suis une grande gourmande c'est pour cela que parmi mes cinq sélections se trouve trois lieus ou se restaurer. 
+                             Tout d'abord snack chat, un snack délicieux qui au passage est tenu par mon frère. 
+                             Le restaurant Istanbul, incontournable sur Narbonne tout comme les Grands buffets où je sors toujours satisfaite.
+                            Puis coté détente et paysages; le Parc de la Campagne pour de belles randonnées seules ou en famille et le moulin du Gua qui est prolonge par le canal et qui possède une grande piste cyclable pour profiter des rayons de soleil en toute saison 
+                        </p>
+
+                </div>
+           
+        </div>
+
+    </div>
+
+  <div id="container">
+     
+      <div class="items">  
+        <script src="C:\Users\najia\Desktop\carteleaft\monjs.js"></script>
+        <div id="mapid" style="width: 640px; height: 480px"></div>
+      </div>
+
+      <div class="items2">
+        <h2>
+          <span id="ville">Narbonne</span>
+          <span class="tooltip"></span>
+        </h2>
+        <i class="wi wi-day-rain"></i>
+        <h3>
+          <span id="temperature">5</span> C°(<span id="conditions">orage</span>)
+        </h3>
+      </div>
+    </div>
+  </body>
+</html>
