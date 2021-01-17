@@ -10,7 +10,7 @@ id: 'mapbox/streets-v11',
 tileSize: 512,
 zoomOffset: -1,
 accessToken: 'pk.eyJ1IjoibGlsaTExMTAwIiwiYSI6ImNramowNHVxNzN0NDAyd3J1c2ZwdDQzbzIifQ.S7GAqkGOh21a0mN3br3gdA'
-});
+});    
 tileStreets.addTo(mymap);
 var marker = L.marker([43.1812667,2.9981484,18.510]).addTo(mymap);
 marker.bindPopup("<b>Bienvenue!</b><br>Snack'chat Fast Food.");
@@ -89,6 +89,22 @@ function displayWeatherInfos(data) {
     document.body.className = conditions.toLowerCase;
 
     
-};
+};var iconne= L.icon({
+    iconUrl: "iconmarqueur/iconrestaurant.png",
+    iconSize:[40,40],
+})
+var iconnne= L.icon({
+    iconUrl: "iconmarqueur/iconevelo.jpg",
+    iconSize:[40,40],
+})
+var iconnnee= L.icon({
+    iconUrl: "iconmarqueur/burger.png",
+    iconSize:[40,40],
+})
+var icone1= L.icon({
+    iconUrl: "iconmarqueur/iconrestaurant.png",
+    iconSize:[40,40],
+})
+
 main();
     
