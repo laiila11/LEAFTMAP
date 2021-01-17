@@ -12,23 +12,29 @@ zoomOffset: -1,
 accessToken: 'pk.eyJ1IjoibGlsaTExMTAwIiwiYSI6ImNramowNHVxNzN0NDAyd3J1c2ZwdDQzbzIifQ.S7GAqkGOh21a0mN3br3gdA'
 });    
 tileStreets.addTo(mymap);
-var marker = L.marker([43.1812667,2.9981484,18.510]).addTo(mymap);
+    
+    
+    var marker = L.marker([43.1812667,2.9981484,18.510],{icon:iconnnee}).addTo(mymap);
 marker.bindPopup("<b>Bienvenue!</b><br>Snack'chat Fast Food.");
 
-var marker = L.marker([43.17442469212582, 2.994225658590871]).addTo(mymap);
+var marker = L.marker([43.17442469212582, 2.994225658590871],{icon:icone1})
+.addTo(mymap);
 marker.bindPopup("<b>Grosse faim!</b><br>Les grands Buffet")
 
-var marker = L.marker([43.19132481997532, 3.0013164581096117]).addTo(mymap);
+var marker = L.marker([43.19132481997532, 3.0013164581096117],{icon:iconnne}).addTo(mymap);
 marker.bindPopup("<b>Détente</b><br>Le canal")
 
 
-var marker = L.marker([43.187304465094506, 3.004314742575812]).addTo(mymap);
-marker.bindPopup("<b>Découverte</b><br>Istanbul")
+var marker = L.marker([43.187304465094506, 3.004314742575812],{icon:iconne}).addTo(mymap);
+marker.bindPopup("<b>Restaurant</b><br>Istanbul")
 
 
-var marker = L.marker([43.189080722235865, 2.971370967948145]).addTo(mymap);
+var marker = L.marker([43.189080722235865, 2.971370967948145],{icon:icone}).addTo(mymap);
 marker.bindPopup("<b>Randonnée</b><br>Parc de la campagne")
 }
+    
+    
+    
 
 const weatherIcons = {
     "Rain":"wi wi-day-rain",
