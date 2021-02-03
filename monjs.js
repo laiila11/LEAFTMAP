@@ -10,11 +10,9 @@ id: 'mapbox/streets-v11',
 tileSize: 512,
 zoomOffset: -1,
 accessToken: 'pk.eyJ1IjoibGlsaTExMTAwIiwiYSI6ImNramowNHVxNzN0NDAyd3J1c2ZwdDQzbzIifQ.S7GAqkGOh21a0mN3br3gdA'
-});    
+});
 tileStreets.addTo(mymap);
-    
-    
-    var marker = L.marker([43.1812667,2.9981484,18.510],{icon:iconnnee}).addTo(mymap);
+var marker = L.marker([43.1812667,2.9981484,18.510],{icon:iconnnee}).addTo(mymap);
 marker.bindPopup("<b>Bienvenue!</b><br>Snack'chat Fast Food.");
 
 var marker = L.marker([43.17442469212582, 2.994225658590871],{icon:icone1})
@@ -32,9 +30,6 @@ marker.bindPopup("<b>Restaurant</b><br>Istanbul")
 var marker = L.marker([43.189080722235865, 2.971370967948145],{icon:icone}).addTo(mymap);
 marker.bindPopup("<b>Randonnée</b><br>Parc de la campagne")
 }
-    
-    
-    
 
 const weatherIcons = {
     "Rain":"wi wi-day-rain",
@@ -95,7 +90,14 @@ function displayWeatherInfos(data) {
     document.body.className = conditions.toLowerCase;
 
     
-};var iconne= L.icon({
+};
+var icone= L.icon({
+    iconUrl: "iconmarqueur/iconerandonné.png",
+    iconSize:[40,40],
+
+})
+
+var iconne= L.icon({
     iconUrl: "iconmarqueur/iconrestaurant.png",
     iconSize:[40,40],
 })
@@ -111,6 +113,5 @@ var icone1= L.icon({
     iconUrl: "iconmarqueur/iconrestaurant.png",
     iconSize:[40,40],
 })
-
 main();
     
